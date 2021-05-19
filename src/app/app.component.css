@@ -1,0 +1,88 @@
+
+main{
+    margin-top: 20px;
+    margin-left: 277px;
+    margin-right: 277px;
+}
+
+/* menu settings */
+.main-menu{
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 120px;
+    background: rgba(252, 252, 252, 0.1);
+    backdrop-filter: blur(3px);
+    border-bottom: 2px solid rgba(212,175,55, .6);
+    width: 70px;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    left:0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+    transition: .2s ease;
+}
+
+/*  In-menu Logo settings */
+.main-menu img{
+  width: 50px;
+  padding-left: 10px;
+  transition: .2s ease-in;
+}
+
+.main-menu:hover{
+    width : 277px;
+    /* overflow-y: scroll; */
+}
+
+.main-menu:hover img{
+  display: none;
+
+}
+
+.main-menu:hover .bigLogo{
+  display:block;
+  width: 250px;
+  height:67px;
+  padding: 10px;
+  transition: .2s ease-in-out;
+}
+
+.main-menu ul p{
+  display: none;
+}
+
+.main-menu:hover ul p{
+  display: block;
+  margin-left: 40px;
+  margin-top: 350px;
+}
+
+ul li{
+  font-size: 25px;
+}
+ul li:hover{
+  color: rgb(247, 198, 38);
+
+}
+
+.main-menu .menu-item{
+    padding: 10px;
+}
+.main-menu .menu-item:hover{
+    background-color: rgba(255, 255, 255, .2);
+    cursor: pointer;
+}
+
+.main-menu .menu-item .fa{
+    color: gray;
+    width:40px;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.main-menu .menu-item:hover > .fa{
+    color: rgba(212, 175, 55, 1);
+}
+/* menu settings end */

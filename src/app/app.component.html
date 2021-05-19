@@ -1,0 +1,25 @@
+<nav>
+  <div class="main-menu" id="mySidenav"><br>
+
+    <img src="assets/logo-mini.png" alt="Logo">
+    <img class="bigLogo" src="assets/logo.png">
+    <ul>
+      <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;Close</a>
+      <li class="menu-item" routerLink="/Login"><i class="fa fa-sign-in"></i>Log-in</li><hr><br>
+      <li class="menu-item" routerLink="/#"><i class="fa fa-home"></i>Home</li>
+      <li class="menu-item" routerLink="/About"><i class="fa fa-info-circle"></i>About</li>
+      <li class="menu-item" routerLink="/#"><i class="fa fa-book"></i>Bestsellers</li>
+      <li class="menu-item" routerLink="/Search"><i class="fa fa-search"></i>Search</li>
+      <li class="menu-item" routerLink="/#"><i class="fa fa-facebook-square"></i>Facebook</li>
+      <p><span>&#169;</span> BogMarkedet 2021</p>
+    </ul>
+  </div>
+</nav>
+
+<!-- Main starts here -->
+<Main>
+  <span style="font-size:30px;cursor:pointer" (click)="openNav()">&#9776; open</span>
+  <router-outlet></router-outlet><!-- router outlet renders the pages here (Components like about.component) -->
+</Main>
+<!-- end of main -->
+
